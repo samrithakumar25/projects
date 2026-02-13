@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #87bee5;
+}
+
+
+.glass {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav {
+    display: flex;
+    padding: 20px 8%;
+    align-items: center;
+}
+
+.logo {
+    color: #f5f5f5;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+}
+
+nav ul {
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-family: "Raleway", sans-serif;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.hero-text {
+    color: #f5f5f5;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-top: 150px;
+    opacity: 0;
+    animation: fadeZoom 1.5s ease forwards;
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.destinations {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.packages {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 230px;
+    border: 1px solid #82caec;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.best {
+    background: #f1fbff;
+}
+
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+button {
+    background: #19b7e3;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+
+button:hover {
+    background: orange;
+}
+
+
+
+footer {
+    background: #87bee5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
